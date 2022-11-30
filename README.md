@@ -1,6 +1,37 @@
-This is the first lab for learning react components and props. We will making 4 custom components and passing the props from parent to child.
-we will also display some images.
+<!-- This is the first lab for learning react components and props. We will making 4 custom components and passing the props from parent to child.
+we will also display some images. -->
 
+Number and name of feature: #1: Display images
+
+Estimate of time needed to complete: 30min
+
+Start time: 12:30 
+
+Finish time: 12:40
+
+Actual time needed to complete: 10 min
+
+
+Number and name of feature: #2: Allow users to vote for their favorite beast
+
+Estimate of time needed to complete: 20min
+
+Start time: 2:00 
+
+Finish time: 2:15
+
+Actual time needed to complete: 15 min
+
+
+Number and name of feature: #2: Bootstrap
+
+Estimate of time needed to complete: 30min
+
+Start time: 2:15
+
+Finish time: 3:05
+
+Actual time needed to complete: 45 min
 
 <!-- 
 
