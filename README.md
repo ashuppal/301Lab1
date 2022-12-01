@@ -33,6 +33,17 @@ Finish time: 3:05
 
 Actual time needed to complete: 45 min
 
+
+
+Number and name of feature: Display a Modal
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 4pm
+
+Finish time: 6:30pm
+
+Actual time needed to complete: 2:30hr
 <!-- 
 
 
