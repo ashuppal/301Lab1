@@ -6,7 +6,7 @@ class HornedBeast extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      clickCount: "❤️"
+      clickCount: ""
     }
   }
 
@@ -19,9 +19,12 @@ class HornedBeast extends React.Component {
     return (
       <>
       <Card onClick={this.handleClick}>
-        <Card.Title> {this.props.title} </Card.Title>
-        <Card.Img src={this.props.imgUrl} />
-        <Card.Body>{this.state.clickCount}</Card.Body>
+        <Card.Title> {this.props.beast.title} </Card.Title>
+        <Card.Img 
+          src={this.props.beast.image_url} 
+          onClick={() => this.props.selectTheBeast(this.props.beast)}/>
+        <Card.Body>{this.props.beast.description}</Card.Body>
+        <Card.Body>{this.state.clickCount} </Card.Body>
       </Card>
      
       </>

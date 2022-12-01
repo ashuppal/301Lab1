@@ -1,6 +1,6 @@
 import React from 'react'
 import HornedBeast from './hornedBeast'
-import beastArray from '../data.json'
+// import beastArray from '../data.json'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -11,12 +11,11 @@ class Main extends React.Component {
     return (
       <Container >
         <Row lg={5} xs={2} sm={3} md={4}>
-          {beastArray.map(beast => (
+          {this.props.beastArray.map(beast => (
             <Col key={beast._id}>
               <HornedBeast
-                
-                title={beast.title}
-                imgUrl={beast.image_url}
+                beast={beast}
+                selectTheBeast={this.props.selectTheBeast}
               />
             </Col>
           ))}
