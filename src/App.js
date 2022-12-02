@@ -22,6 +22,18 @@ class App extends React.Component{
     }
    }
 
+   filteredHorns = (event) =>{
+
+    let horns = parseInt(event.target.value) ;
+
+    console.log(horns)
+    let filteredBeast = beastData.filter(beastHorn=>beastHorn.horns === horns);
+
+    this.setState({
+      allBeast : filteredBeast
+    })
+  }
+
    selectTheBeast = (theBeast) =>{
     this.setState({beastSelected: theBeast, showSelectedBeast: true})
    }
@@ -38,6 +50,7 @@ class App extends React.Component{
       <Main 
         beastArray = {this.state.allBeast} 
         selectTheBeast = {this.selectTheBeast} 
+        filteredHorns = {this.filteredHorns}
         />
       <SelectedBeast 
         hideModal = {this.hideModal} 
